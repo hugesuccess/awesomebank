@@ -1,0 +1,38 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<welcome></welcome>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+        <ul>
+            <navbox ng-repeat="item in links"></navbox>
+        </ul>
+    </div>
+    <div class="col-md-7 main-content">
+        <ul>
+            <portfolio ng-repeat="item in portfolios"></portfolio>
+      </ul>
+    </div>
+  </div>
+
+<div class="row">
+    <div class="col-xs-12 text-right">
+        <a href="" class="gold"><i class="glyphicon glyphicon-plus"></i> Add external account</a>
+    </div>
+</div>
+
+<div class="little-tab text-center">
+    <i class="glyphicon glyphicon-triangle-top"></i>
+    <p>All the things</p>
+</div>
+
+  <tool></tool>
+
+  <splash></splash>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+  </div>
+</footer>

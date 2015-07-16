@@ -1,0 +1,16 @@
+ <li>
+  <div class="row">
+      <div class="col-xs-1">
+          <i class="glyphicon glyphicon-triangle-right"></i>
+      </div>
+      <div class="col-xs-7">
+       <h2>{{item.title}}</h2>
+       <p><span>{{item.provider}}</span> {{item.type | capitalize}} #{{item.number}}</p>
+      </div>
+      <div class="col-xs-4">
+        <h1>{{item.value | currency}}</h1>
+        <p>as of {{item.date | date:'h:m a': timezone}} PT</p>
+      </div>
+  </div>
+</li>
+

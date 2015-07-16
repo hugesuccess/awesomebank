@@ -1,0 +1,426 @@
+body {
+    background-color:#f7f7f7;
+    padding-top: 0;
+}
+
+.footer {
+    background-color:white;
+}
+
+/*
+ * Globals
+ */
+
+body {
+  font-family: "Open Sans", Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+a.gold {
+    color: #d3a126;
+    text-decoration:none;
+}
+
+a.gold i {
+    font-size: 12px;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+    background-color: #125742;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+    max-height: 80px;
+}
+.blog-masthead h3.title {
+    position: relative;
+    top: 40px;
+    color:white;
+    font-family: Arial;
+    font-weight: 700;
+}
+
+
+.blog-masthead .sub-navigation li {
+    float: right;
+    list-style-type: none;
+    font-family: Arial;
+    padding-right: 20px;
+}
+
+.blog-masthead .sub-navigation li a {
+    color:white;
+    text-decoration: none;
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-nav {
+width: 70%;
+  margin-left: 30%;
+  position: relative;
+  top: -33px;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.white {
+    background-color:white;
+}
+
+.welcome {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.3);
+    margin-bottom: 50px;
+}
+
+.navbox {
+    list-style-type:none;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.navbox.active {
+    background-color:white;
+    box-shadow: -2px 0 3px 0 rgba(0,0,0,.2);
+    overflow:hidden;
+    z-index: 3;
+    position:relative;
+}
+
+.navbox h4 {
+    color: #93918e;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.navbox h6 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.navbox p {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    z-index: 2;
+    background-color:white;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    position:relative;
+    left: -18px;
+    padding: 0;
+}
+
+.main-content ul {
+    padding: 0;
+}
+
+.main-content li {
+    list-style-type: none;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.main-content li i {
+    position:relative;
+    top: 35px;
+    left: 25px;
+    font-size: 12px;
+}
+
+.main-content h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.main-content p {
+    color: #9e9c9a;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.main-content h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px
+    font-weight: 200 !important;
+    position:relative;
+    left: -20px;
+}
+
+.tool {
+    margin-top: 50px;
+}
+
+.tool .panel-title i {
+    font-size: 12px;
+}
+
+.carousel {
+    background-color:white;
+    padding-top: 40px;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+.carousel-inner img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-control .glyphicon {
+    color:lightgrey;
+    height: 40px;
+    margin-top: 120px;
+    font-size: 40px;
+}
+
+.carousel-caption h4 {
+    color: #d3a126;
+    text-shadow: none;
+    font-weight: 200;
+}
+
+.carousel-caption p {
+    font-weight: 100;
+    color: #636363;
+    text-shadow: none;
+}
+
+.welcome p {
+    font-size: 12px;
+}
+
+.welcome h5 {
+    font-family: 'Cardo' !important;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.btn-green {
+    background-color: #077348;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006e2e+0,006e2e+100;Green+Flat+%233 */
+background: #006e2e; /* Old browsers */
+background: -moz-linear-gradient(top,  #006e2e 0%, #006e2e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006e2e), color-stop(100%,#006e2e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #006e2e 0%,#006e2e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #006e2e 0%,#006e2e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #006e2e 0%,#006e2e 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #006e2e 0%,#006e2e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#006e2e',GradientType=0 ); /* IE6-9 */
+
+    color: white;
+    font-family: Arial;
+    border: 1px solid #d3a126;
+    box-shadow: 0 0 2px rgba(0,0,0,.3);
+}
+
+.bold {
+    font-weight: bold !important;
+    font-family: Arial;
+}
+
+.percent {
+    color: #cfcfcf;
+    font-size: 22px;
+    font-weight: 100;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: center;
+    width: 110px;
+    padding-bottom: 20px;
+    position:relative;
+    top: -15px;
+    left: -8px;
+}
+
+.current-title {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.tool table {
+    margin: 30px;
+}
+
+.tool table td{
+    font-weight: 400 !important;
+    color:#474747;
+    padding: 5px;
+}
+
+#bank-detail {
+    height: 35px;
+    padding-right: 5px;
+    position:relative;
+    top: -35px;
+    max-width: 300px;
+}
+
+#bank-detail h3 {
+  max-width: 166px;
+  overflow: auto;
+  word-break: break-word;
+  position: relative;
+  left: 118px;
+}
+
+.little-tab {
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: fixed;
+    right: -60px;
+    top: 350px;
+    background-color: #e8e8e6;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    padding: 10px;
+    padding-top: 0;
+    border: 1px solid #BABABA;
+}
