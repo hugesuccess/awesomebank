@@ -424,3 +424,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
     padding-top: 0;
     border: 1px solid #BABABA;
 }
+
+.superscript { position: relative; top: -0.5em; font-size: 60%; }
+.subscript { position: relative; bottom: 0em; font-size: 60%;left: -4px; }

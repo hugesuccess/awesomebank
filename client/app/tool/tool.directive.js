@@ -26,8 +26,9 @@ angular.module('awesomebankApp')
             });
 
             scope.current = data[0];
-            scope.current.percent = scope.current.value / totalAmt
             scope.current.percent = Math.floor((scope.current.value / totalAmt) * 100)
+            var tmp = scope.current.value.toString().slice(-2);
+            scope.current.cents = tmp;
 
 
              $("#myChart").click(
@@ -39,6 +40,9 @@ angular.module('awesomebankApp')
 
                         scope.current = record[0];
                         scope.current.percent = Math.floor((scope.current.value / totalAmt) * 100);
+                        var tmp = scope.current.value.toString().slice(-2);
+                        scope.current.cents = tmp;
+
                         scope.$apply();
                         $("#bank-detail")
                             .css("border-right", "4px solid " + scope.current.color );

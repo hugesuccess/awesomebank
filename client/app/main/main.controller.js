@@ -9,6 +9,11 @@ angular.module('awesomebankApp')
     });
 
     $http.get('/api/links').success(function(links) {
+      angular.forEach(links, function(link) {
+        var tmp = link.value.toString().slice(-2);
+        link.cents = tmp;
+        return link;
+    })
       $scope.links = links;
     });
 
@@ -31,4 +36,11 @@ angular.module('awesomebankApp')
     $scope.deleteThing = function(thing) {
       $http.delete('/api/things/' + thing._id);
     };
+
+  $scope.$on('$viewContentLoaded', function(){
+    //Here your view content is fully loaded !!
+    var cash = $(".cash");
+    alert(cash.length);
+  });
+
   });
